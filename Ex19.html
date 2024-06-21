@@ -1,0 +1,22 @@
+<head> 
+<title>anima1</title> 
+<script language="JavaScript"> 
+function moveTxt() 
+{ 
+if (anim.style.pixelTop > -500 && anim.style.pixelLeft > -500) 
+{ 
+anim.style.pixelTop -=2;//движение вниз
+anim.style.pixelLeft -=2;//движение влево
+setTimeout("moveTxt()", 50); 
+} 
+} 
+</script> 
+    
+</head> 
+<body onLoad="moveTxt()"> 
+<div id="anim" style="position:absolute; left:90%; top:10"> <!--текст начинается с правого края сверху-->
+Текст, шагом марш! 
+</div> 
+</body> 
+    
+</html> 
